@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>This is practice </title>
+<link rel="stylesheet" href="css/style2.css">
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+       font-family: 'Josefin Sans',sans-serif;
+       box-sizing: border-box;
+    }
+    .hero{
+        height: 100vh;
+        width: 100%;
+       background-image: url(/aadarsh1234.PNG);
+       background-size: cover;
+       background-position: center;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 45px;
+        padding-left: 8%;
+        padding-right: 8%;
+    
+    }
+    .logo{
+        color: white;
+        font-size: 35px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    
+    
+    }
+    span{
+        color: #f9004d;
+    }
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 25px;
+        font-weight:bold ;
+        text-transform: capitalize;
+    
+    }
+    nav ul li a:hover{
+        color: pink;
+      
+    
+    }
+    .btn{
+        background-color: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight:bold ;
+        padding: 10px 25px;
+        border-radius: 30px;
+        transition: transform.4s;
+    }
+    .btn:hover{
+        transform: scale(1.2);
+    }
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
+    
+    }
+    h1{
+        text-align: center;
+        font-size: 3.7em;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-family: 'Montserrat',sans-serif;
+        background: url(multicolor.jpg);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: text 7.5s linear infinite;
+    
+    
+    }
+    @keyframes text {
+        from{
+            background-position: 0% 50%;
+        }
+        to{
+            background-position: 100% 1005;
+        }
+    }
+    h3{
+        color: white;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+    h4{
+        color: #fcfc;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+    .newlatter form{
+        width: 380px;
+        max-width: 100%;
+        position: relative;
+    }
+    .newslatter form input:first-child{
+        display: inline-block;
+        width: 100%;
+        padding: 14px 130px 14px 15px;
+        border: 2px solid #f9004d;
+        outline: none;
+        border-radius: 30px;
+    }
+    .newslatter form input:last-child{
+        position: absolute;
+        display: inline-block;
+        outline: none;
+        border: none;
+        padding: 10px 30px;
+        border-radius:30px ;
+        background-color:#f9004d ;
+        box-shadow: 0px 0px 5px #000,0px 0px 15px #858585 ;
+    
+    }
+    
+    
+    
+    .about{
+        width: 100%;
+        padding: 100px 0px;
+        background-color: #191919;
+    
+    }
+    .about img{
+        height: auto;
+        width: 430px;
+        border-radius: 20px;
+    
+    }
+    .about-text{
+        width: 550px;
+    
+    }
+    .main{
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    .about-text h2{
+        color: white;
+        font-size: 75px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .about-text h5{
+        color: white;
+        letter-spacing: 2px;
+        font-size: 22px;
+        margin-bottom: 25px;
+        text-transform: capitalize;
+    
+    }
+    .about-text p{
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom:45px ;
+    }
+    button{
+        background-color: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+    
+    }
+    button:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+    
+    }
+    .servece{
+        background:#101010 ;
+        width: 100%;
+        padding: 100px 0px;
+    }
+    .title h2{
+        color: white;
+        font-size: 75px;
+        width: 1130px;
+        margin: 30px auto;
+        text-align: center;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+    }
+    .card{
+        height: 365px;
+        width: 325px;
+        padding: 20px 35px;
+        background: #191919;
+        border-radius: 20px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden ;
+        text-align: center;
+    
+    }
+    .card svg{
+        height: 50px;
+       width: 50px;
+        font-size: 30px;
+       
+        text-align: center;
+        margin: 25px 0px;
+        background-color: #f9004d;
+    }
+    h5{
+        color: white;
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+    .pra p{
+        color: #fcfc;
+        font-size: 16px;
+        line-height:27px;
+        margin-bottom: 25px;
+        font-family: Lucida Calligraphy;
+    }
+    .card .button{
+        background-color: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 9px 22px;
+        border-radius: 30px;
+        transition: .4s;
+    
+    }
+    .card .button:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+    }
+    .contact-me{
+        width: 100%;
+        height: 300px;
+        background: #191919;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:center ;
+    }
+    .contact-me p{
+        color: white;
+        font-size:30px ;
+        font-weight: bold;
+        margin: 25px;
+    }
+    .contact-me .button-two{
+        background-color: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 11px 30px;
+        border-radius: 30px;
+        transition: .4s;
+    
+    }
+    .contact-me .button-two:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+    
+    }
+    footer{
+        position:relative;
+        width: 100%;
+        height: 400px;
+        background: #101010;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    footer p:nth-child(1){
+        font-size: 30px;
+        color: white;
+        margin-bottom:20px ;
+        font-weight: bold;
+    
+    }
+    footer p:nth-child(2){
+        color: white;
+        font-size: 17px;
+        width: 500px;
+        text-align: center;
+        line-height: 26px;
+    }
+    .social{
+        display: flex;
+    
+    }
+    .social a{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f9004d;
+        margin:22px 10px;
+        color: white;
+      text-decoration: none;
+      border-radius: 10px;
+    
+     font-size: 20px;
+    }
+    .social a:hover{
+        transform: scale(1.3);
+        transition: .3s;
+    }
+    .end{
+        position: absolute;
+        color: #f9004d;
+        bottom: 35px;
+        font-size: 14px;
+    
+    
+    }
+  .hero{
+    background-image: url(aadarsh1234.PNG);
+    background-size:  100% auto;
+    background-repeat: no-repeat;
+    
+  }
+</style>
+    </head>
+    <body>
+      <div class="hero">
+        <nav>
+          <h2 class="logo">portfo<span>lio</span></h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+          <a href="#" class="btn" >subscribe</a>
+        </nav>
+        <div class="content">
+          <h4>Hello, my name is </h4>
+          <h1>Aadarsh <span>lodhi</span></h1>
+          <h3>i am a web devloper</h3>
+          <div class="newslatter">
+            <form>
+              
+              <input type="email" name="email" id="email" placeholder="Email">
+              <input type="submit" name="submit" value="Lets start" >
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+      <section class="about">
+        <div class="main">
+          <img src="aadarsh123456.png">
+          <div class="about-text">
+            <h2>About me
+            </h2>
+            <h5>Devloper<span>&designer</span></h5>
+            <p> I am front-end web devloper. I can provide clean code and pixel
+              perfect design . I am also make website more & more interactive with web
+              animation. I can provide clean code pixel perfect design. I am also
+              make the website more & more interactive with web animation. A responsive designmakes Your
+              website accessable to all users, regardless of their device.
+            </p>
+            <button type="button">Let's Talk</button>
+          </div>
+        </div>
+
+      </section>
+      <div class="servece">
+        <div class="title" >
+          <h2>Our Services</h2>
+          <div class="box">
+            <div class="card">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+             
+              <h5>Web Devlopment</h5>
+              <div class="pra">
+                <p>Every website should be built with two primary goals:
+                  firstly, it needs to work across devices. Secondly, it needs
+                  to be as fast possible.
+
+                </p>
+                <p style="text-align: center;">
+                  <a class="button" href="#"> Read more</a>
+                </p>
+              </div>
+
+            </div>
+            <div class="card">
+              <svg class="max" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+              <h5>Web Devlopment</h5>
+              <div class="pra">
+                <p>Every website should be built with two primary goals:
+                  firstly, it needs to work across devices. Secondly, it needs
+                  to be as fast possible.
+
+                </p>
+                <p style="text-align: center;">
+                  <a class="button" href="#"> Read more</a>
+                </p>
+              </div>
+
+            </div>
+            <div class="card">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg>
+              <h5>Web Devlopment</h5>
+              <div class="pra">
+                <p>Every website should be built with two primary goals:
+                  firstly, it needs to work across devices. Secondly, it needs
+                  to be as fast possible.
+
+                </p>
+                <p style="text-align: center;">
+                  <a class="button" href="#"> Read more</a>
+                </p>
+              </div>
+
+            </div>
+          </div>       
+         </div>
+
+      </div>
+
+   <div class="contact-me">
+    <p>Let Me Get You Beautiful Website.</p>
+    <a class="button-two" href="#">Hire Me</a>
+   </div>
+   <footer>
+    <p>
+      Aadarsh lodhi
+    </p>
+    <p>For more HTML,CSS, and coading tutorial-please click on the
+      link below to subscribe to my chanel:</thead></p>
+      <div class="social">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+        </a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+        </a>
+      </div>
+      <p class="end">CopyRibht By Aadarsh lodhi</p>
+   </footer>
+    </body>
+</html>
+<div></div>
